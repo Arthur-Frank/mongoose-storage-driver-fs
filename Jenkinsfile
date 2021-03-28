@@ -33,7 +33,7 @@ pipeline {
     }
     post {
         always {
-            archiveArtifacts artifacts: 'generatedFile.txt', onlyIfSuccessful: true
+            archiveArtifacts artifacts: 'target/*.jar', onlyIfSuccessful: true
         }
     }
 }
