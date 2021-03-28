@@ -31,9 +31,9 @@ pipeline {
             }
         }
     }
-    //post {
-      //  always {
-        //    archiveArtifacts artifacts: '**/*.jar', onlyIfSuccessful: true
-        //}
-    //}
+    post {
+        always {
+            archiveArtifacts artifacts: '**/*.jar', onlyIfSuccessful: true
+        }
+    }
 }
