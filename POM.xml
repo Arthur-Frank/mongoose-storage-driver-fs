@@ -1,0 +1,5 @@
+<dependency>
+  <groupId>com.github.emc-mongoose</groupId>
+  <artifactId>mongoose-storage-driver-fs</artifactId>
+  <version>4.2.11</version>
+</dependency>
