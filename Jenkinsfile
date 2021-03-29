@@ -10,6 +10,9 @@ pipeline {
                     // sh 'mvn clean compile'
                 //}
             }
+            steps {
+                sh './mvnw clean compile'
+            }
         }
 
         stage ('Testing Stage') {
