@@ -9,8 +9,6 @@ pipeline {
                 //withMaven(maven : 'maven_3_5_0') {
                     // sh 'mvn clean compile'
                 //}
-            }
-            steps {
                 sh './mvnw clean compile'
             }
         }
