@@ -26,7 +26,6 @@ pipeline {
 
     stage('Quality Analysis') {
       parallel {
-        // run Sonar Scan and Integration tests in parallel. This syntax requires Declarative Pipeline 1.2 or higher
         stage ('Integration Test') {
           agent any  //run this stage on any available agent
           steps {
@@ -34,14 +33,11 @@ pipeline {
           }
         }
         stage('Sonar Scan') {
-              // we can use the same image and workspace as we did previously
-              reuseNode true
-              image 'maven:3.5.0-jdk-8'
           environment {
-            //use 'sonar' credentials scoped only to this stage
             SONAR = credentials('sonar')
           }
           steps {
+            image 'maven:3.5.0-jdk-8'
             sh 'mvn sonar:sonar -Dsonar.login=$SONAR_PSW'
           }
         }
