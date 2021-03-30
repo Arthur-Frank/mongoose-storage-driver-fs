@@ -3,7 +3,7 @@
   <groupId>com.github.emc-mongoose</groupId>
   <artifactId>mongoose-storage-driver-fs</artifactId>
   <version>4.2.0</version>
-    <properties>
+  <properties>
     <maven.compiler.source>1.6</maven.compiler.source>
     <maven.compiler.target>1.6</maven.compiler.target>
   </properties>
