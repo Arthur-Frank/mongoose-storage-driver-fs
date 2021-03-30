@@ -4,10 +4,6 @@
   <artifactId>mongoose-storage-driver-fs</artifactId>
   <version>4.2.0</version>
   <name>mongoose-storage-driver-fs</name>
-  <properties>
-    <maven.compiler.source>1.6</maven.compiler.source>
-    <maven.compiler.target>1.6</maven.compiler.target>
-  </properties>
   <description>Mongoose is a high-load storage performance testing tool</description>
   <url>https://github.com/emc-mongoose/mongoose-storage-driver-fs</url>
   <licenses>
